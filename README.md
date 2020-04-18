@@ -20,10 +20,10 @@ yo burp-extension
 
 ## Burp Extension features
 
-When you generate your plugin project the generator will ask you what
-features should be included in your plugin. If you are familiarized in
-burp extension developing the names of the features will be descritive 
-enought, but, if you are new in burp extensions, here is a short 
+When you generate your plugin project, the generator will ask you what
+features should be included in your plugin. If you are familiarized with
+burp extension developing, the names of the features will be descritive 
+enough, but, if you are new in burp extensions, here is a short 
 description of what can be done with each feature.
 
 ### Extension Tab GUI
@@ -36,7 +36,7 @@ extension.
 
 ### Message Editor Tab GUI
 
-Custom tab that will be aded to Burp's Message editor UI (Repeter, Intruder...).
+Custom message editor tab that will be added to Burp's Message editor UI (Repeter, Intruder...).
 Normally is used to provide some kind of custom editor/view functionality in 
 request/response payloads. One example is [JSON Beutifier](https://github.com/PortSwigger/json-beautifier) extension.
 
@@ -44,7 +44,7 @@ request/response payloads. One example is [JSON Beutifier](https://github.com/Po
 
 ### Context menu GUI
 
-Custom context menu will be aded to Burp's UI nearly anywhere, by pressing right 
+Custom context menu will be added to Burp's UI nearly anywhere, by pressing right 
 click. Burp allows to show context menus in any of this situations:
 
 - Intruder attack results.
@@ -69,24 +69,24 @@ extension, that allows to copy a request as python code (just an example).
 The listener will be notified of requests and responses being processed by the Proxy 
 tool (Proxy Listener) or made by any Burp tool (HTTP Listener). Extensions can perform custom analysis or modification of these messages.
 
-In other words, a Proxy Listeners intercept the reques coming from the browser to burp and the response coming from burp to the browser. A HTTP Listener intercept outgoing request from burp to the web server and incoming responses from the web server.
+In other words, a Proxy Listeners intercept the reques coming from the browser to Burp and the response coming from Burp to the browser. A HTTP Listener intercept outgoing request from burp to the web server and incoming responses comming from the web server.
 
 ![](img/proxy-http-listeners.png)
 
-A real life plugin example using this extension's feature is 
+A real life example plugin using this extension's feature is 
 [AutoRepeater](https://github.com/nccgroup/AutoRepeater)
 
 ### Intruder payload generator
 
-Extend Intruder payloads ading custom generator capabilities, one posible use of this
+Extend Intruder payloads adding custom generator capabilities. One posible use of this
 functionality could be generate random valid IBAN numbers. One real life example is
-the extension [Intruder file payload generator](https://github.com/PortSwigger/intruder-file-payload-generator) (i don't use it, just an example)
+the extension [Intruder file payload generator](https://github.com/PortSwigger/intruder-file-payload-generator) (I don't use it, it's just an example)
 
 ![](img/intruder-payload-generator.png)
 
 ### Intruder payload processor
 
-Extend Intruder payloads ading custom processor capabilities, one posible example 
+Extend Intruder payloads adding custom processor capabilities, one possible example 
 could be perform an AES encryption based on a static key.
 
 ![](img/intruder-payload-processor.png)
@@ -130,7 +130,7 @@ of Scanner issues by registering a Scanner listener.
 The listener will be notified whenever a change occurs to Burp's 
 suite-wide target scope.
 
-Probably useless because burp don't allow you to access global scope
+Probably useless because Burp don't allow you to access global scope
 definition.
 
 
