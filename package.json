@@ -1,6 +1,6 @@
 {
   "name": "generator-burp-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Burp Extension Java project Generator",
   "homepage": "https://github.com/rsrdesarrollo/generator-burp-extension",
   "author": {

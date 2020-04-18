@@ -133,6 +133,39 @@ suite-wide target scope.
 Probably useless because Burp don't allow you to access global scope
 definition.
 
+## Trade-offs
+
+This section explain some decisions in the development of the template.
+
+### Why Java and not Python/Ruby
+
+First of all, I'm not a Java fan
+
+As you might know, BurpSuite allows to develop extensions in three main languages: Java, 
+Python and Ruby. Actually this is not entirely true. Burp allows you to develop in Jython
+and JRuby. The real problem here is that, when you are using Jython or JRuby in a Burp 
+extension you still need to think in Java (because is the main language of Burp), so, at 
+the end, you will be developing in Python and Java, but with a lot of problems to integrate
+your project with a real IDE, with autocompletion and those kind of modern thins.
+
+Another good reason to use Java instead of Jython is because it is based on python 2.7, and 
+I'm not using JRuby because I don't like Ruby, that's all.
+
+### Everything is a Singleton (leading article)
+
+As you might notice, all implementations of a Burp Interface are a following a 
+[Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern) the main reason for this is
+completely subjective.
+
+The thing is that Burp is a great tool, but is a little bit obscure about it's internals
+and probably a little bit messy. So, for example, Burp allows you tu register multiple
+IHTTPListeners, but you will loose important decisions like the order of calling for this
+listeners. This kind of situations, in my humble opinion, might obscure and difficult the 
+understanding of a Burp Extension and code maintainability.
+
+You can see each singleton class as a necessary connection point with Burp, that must be 
+unique. From that point of connection, you can control your code, performing any kind of
+object oriented design.
 
 ## License
 
@@ -141,3 +174,4 @@ MIT © [Raul Sampedro](https://github.com/rsrdesarrollo)
 
 [npm-image]: https://badge.fury.io/js/generator-burp-extension.svg
 [npm-url]: https://npmjs.org/package/generator-burp-extension
+
