@@ -35,7 +35,7 @@ public class ScannerCheck implements IScannerCheck {
      */
     @Override
     public List<IScanIssue> doPassiveScan(IHttpRequestResponse baseRequestResponse) {
-        // TODO
+        // TODO:
         return null;
     }
 
@@ -63,7 +63,7 @@ public class ScannerCheck implements IScannerCheck {
     public List<IScanIssue> doActiveScan(
             IHttpRequestResponse baseRequestResponse, IScannerInsertionPoint insertionPoint
     ) {
-        // TODO
+        // TODO:
         return null;
     }
 
@@ -88,7 +88,7 @@ public class ScannerCheck implements IScannerCheck {
      */
     @Override
     public int consolidateDuplicateIssues(IScanIssue existingIssue, IScanIssue newIssue) {
-        // TODO
+        // TODO:
         return 0;
     }
 }

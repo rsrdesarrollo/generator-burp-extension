@@ -21,5 +21,6 @@ public class ScopeChangeListener implements IScopeChangeListener {
      */
     @Override
     public void scopeChanged() {
+        // TODO:
     }
 }

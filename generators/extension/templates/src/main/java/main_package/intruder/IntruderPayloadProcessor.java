@@ -44,6 +44,7 @@ public class IntruderPayloadProcessor implements IIntruderPayloadProcessor {
      */
     @Override
     public byte[] processPayload(byte[] currentPayload, byte[] originalPayload, byte[] baseValue) {
+        // TODO:
         return new byte[0];
     }
 }

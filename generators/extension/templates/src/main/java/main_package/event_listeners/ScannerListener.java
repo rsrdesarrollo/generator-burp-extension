@@ -28,6 +28,6 @@ public class ScannerListener implements IScannerListener {
      */
     @Override
     public void newScanIssue(IScanIssue issue) {
-
+        // TODO:
     }
 }

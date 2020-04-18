@@ -56,7 +56,7 @@ public class ScannerInsertionPointProvider implements IScannerInsertionPointProv
          */
         @Override
         public String getInsertionPointName() {
-            // TODO
+            // TODO:
             return null;
         }
 
@@ -69,7 +69,7 @@ public class ScannerInsertionPointProvider implements IScannerInsertionPointProv
          */
         @Override
         public String getBaseValue() {
-            // TODO
+            // TODO:
             return null;
         }
 
@@ -92,7 +92,7 @@ public class ScannerInsertionPointProvider implements IScannerInsertionPointProv
          */
         @Override
         public byte[] buildRequest(byte[] payload) {
-            // TODO
+            // TODO:
             return new byte[0];
         }
 
@@ -112,7 +112,7 @@ public class ScannerInsertionPointProvider implements IScannerInsertionPointProv
          */
         @Override
         public int[] getPayloadOffsets(byte[] payload) {
-            // TODO
+            // TODO:
             return new int[0];
         }
 

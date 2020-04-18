@@ -1,5 +1,6 @@
 package <%= package %>.network_listeners;
 
+import burp.IBurpExtenderCallbacks;
 import burp.IHttpListener;
 import burp.IHttpRequestResponse;
 
@@ -31,5 +32,18 @@ public class HTTPListener implements IHttpListener {
     @Override
     public void processHttpMessage(int toolFlag, boolean messageIsRequest, IHttpRequestResponse messageInfo) {
         // TODO
+        switch (toolFlag){
+            case IBurpExtenderCallbacks.TOOL_SUITE:
+            case IBurpExtenderCallbacks.TOOL_TARGET:
+            case IBurpExtenderCallbacks.TOOL_PROXY:
+            case IBurpExtenderCallbacks.TOOL_SPIDER:
+            case IBurpExtenderCallbacks.TOOL_SCANNER:
+            case IBurpExtenderCallbacks.TOOL_INTRUDER:
+            case IBurpExtenderCallbacks.TOOL_REPEATER:
+            case IBurpExtenderCallbacks.TOOL_SEQUENCER:
+            case IBurpExtenderCallbacks.TOOL_DECODER:
+            case IBurpExtenderCallbacks.TOOL_COMPARER:
+            case IBurpExtenderCallbacks.TOOL_EXTENDER:
+        }
     }
 }

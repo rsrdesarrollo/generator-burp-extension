@@ -16,8 +16,11 @@ public class ExtensionStateListener implements IExtensionStateListener {
         return mInstance;
     }
 
+    /**
+     * This method is called when the extension is unloaded.
+     */
     @Override
     public void extensionUnloaded() {
-        // Do something to clean out.
+        // TODO: Do something to clean out.
     }
 }

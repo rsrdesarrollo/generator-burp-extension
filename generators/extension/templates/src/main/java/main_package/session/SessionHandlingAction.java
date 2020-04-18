@@ -49,6 +49,6 @@ public class SessionHandlingAction implements ISessionHandlingAction {
      */
     @Override
     public void performAction(IHttpRequestResponse currentRequest, IHttpRequestResponse[] macroItems) {
-        // TODO
+        // TODO:
     }
 }

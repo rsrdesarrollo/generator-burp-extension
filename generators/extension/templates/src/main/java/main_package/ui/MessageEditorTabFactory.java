@@ -35,7 +35,7 @@ public class MessageEditorTabFactory implements IMessageEditorTabFactory {
      */
     @Override
     public IMessageEditorTab createNewInstance(IMessageEditorController controller, boolean editable) {
-        // TODO
+        // TODO:
         if (controller != null) {
             // TODO: Make decisions
         }
@@ -90,7 +90,7 @@ public class MessageEditorTabFactory implements IMessageEditorTabFactory {
          */
         @Override
         public boolean isEnabled(byte[] content, boolean isRequest) {
-            // TODO
+            // TODO:
             return false;
         }
 
@@ -109,7 +109,7 @@ public class MessageEditorTabFactory implements IMessageEditorTabFactory {
          */
         @Override
         public void setMessage(byte[] content, boolean isRequest) {
-            // TODO
+            // TODO:
         }
 
         /**
@@ -119,7 +119,7 @@ public class MessageEditorTabFactory implements IMessageEditorTabFactory {
          */
         @Override
         public byte[] getMessage() {
-            // TODO
+            // TODO:
             return new byte[0];
         }
 
@@ -136,7 +136,7 @@ public class MessageEditorTabFactory implements IMessageEditorTabFactory {
          */
         @Override
         public boolean isModified() {
-            // TODO
+            // TODO:
             return false;
         }
 
@@ -149,7 +149,7 @@ public class MessageEditorTabFactory implements IMessageEditorTabFactory {
          */
         @Override
         public byte[] getSelectedData() {
-            // TODO
+            // TODO:
             return new byte[0];
         }
     }

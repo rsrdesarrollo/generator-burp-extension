@@ -43,6 +43,7 @@ public class IntruderPayloadGeneratorFactory implements IIntruderPayloadGenerato
      */
     @Override
     public IIntruderPayloadGenerator createNewInstance(IIntruderAttack attack) {
+        // TODO:
         return new IntruderPayloadGenerator(attack);
     }
 
@@ -64,6 +65,7 @@ public class IntruderPayloadGeneratorFactory implements IIntruderPayloadGenerato
          */
         @Override
         public boolean hasMorePayloads() {
+            // TODO:
             return false;
         }
 
@@ -77,6 +79,7 @@ public class IntruderPayloadGeneratorFactory implements IIntruderPayloadGenerato
          */
         @Override
         public byte[] getNextPayload(byte[] baseValue) {
+            // TODO:
             return new byte[0];
         }
 
@@ -89,7 +92,7 @@ public class IntruderPayloadGeneratorFactory implements IIntruderPayloadGenerato
          */
         @Override
         public void reset() {
-
+            // TODO:
         }
     }
 }
