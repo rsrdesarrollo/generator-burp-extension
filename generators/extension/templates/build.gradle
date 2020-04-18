@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'net.portswigger.burp.extender:burp-extender-api:1.7.22'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.intellij', name: 'forms_rt', version: '7.0.3'
+    compile group: 'com.fifesoft', name: 'rsyntaxtextarea', version: '2.5.3'
+}
+
+task fatJar(type: Jar) {
+    baseName = project.name + '-FATJAR'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}

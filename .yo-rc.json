@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Raul Sampedro",
+      "authorEmail": "rsrdesarrollo@gmail.com",
+      "authorUrl": "https://github.com/rsrdesarrollo"
+    }
+  }
+}
