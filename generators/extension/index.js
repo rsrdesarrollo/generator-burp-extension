@@ -109,8 +109,12 @@ module.exports = class extends Generator {
       this.destinationPath("gradle")
     );
 
+    this.fs.copy(
+      this.templatePath("gitignore"),
+      this.destinationPath(".gitignore")
+    );
+
     const copyNoTemplate = [
-      ".gitignore",
       "build.gradle",
       "gradlew",
       "gradlew.bat",
