@@ -39,8 +39,8 @@
   "dependencies": {
     "chalk": "^2.1.0",
     "generator-license": "^5.4.0",
-    "lodash": "^4.17.15",
-    "yeoman-generator": "^2.0.1",
+    "lodash": ">=4.17.19",
+    "yeoman-generator": "^4.11.0",
     "yosay": "^2.0.1"
   },
   "jest": {
